@@ -14,7 +14,7 @@ configuration:
 requires_shotgun_fields:
 
 # More verbose description of this item
-display_name: "GDN Framework"
+display_name: "GDN Framework (Supports tk-gdn)"
 description: "CDN connection and rpc layer for GDN"
 
 # Required minimum versions for this item to run
