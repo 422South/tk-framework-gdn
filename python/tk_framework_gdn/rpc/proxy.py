@@ -101,7 +101,6 @@ class ProxyWrapper(object):
                 try:
                     return json.loads(data)
                 except Exception:
-                    print("ProxyWrapper: json.loads(data)  Exception %s" % data)
                     return data
             elif data["__uniqueid"] in cls._REGISTRY:
                 # This data has already been wrapped, so we just need
