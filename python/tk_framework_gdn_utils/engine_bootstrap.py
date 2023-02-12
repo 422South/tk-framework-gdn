@@ -129,12 +129,12 @@ def bootstrap(root_path, port, engine_name, app_id):
 
 # executed from javascript
 if __name__ == "__main__":
-    try:
-        import pydevd_pycharm
-
-        pydevd_pycharm.settrace('localhost', port=7720, suspend=False)
-    except:
-        pass
+    # try:
+    #     import pydevd_pycharm
+    #
+    #     pydevd_pycharm.settrace('localhost', port=7720, suspend=False)
+    # except:
+    #     pass
     # the communication port is supplied by javascript. the toolkit engine
     # env to bootstrap into is also supplied by javascript
     (port, engine_name, app_id) = sys.argv[1:4]
