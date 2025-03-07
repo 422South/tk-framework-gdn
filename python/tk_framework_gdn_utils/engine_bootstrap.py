@@ -145,7 +145,7 @@ if __name__ == "__main__":
     except ImportError:
         try:
             # No PySide2, let's try PySide.
-            from PySide import QtCore, QtGui
+            from PySide6 import QtCore, QtGui
         except ImportError:
             sys.stdout.write("[ERROR]: %s" % (traceback.format_exc(),))
             sys.stdout.flush()
